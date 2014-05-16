@@ -1,0 +1,299 @@
+html{
+	height:100%;
+}
+body {
+	font-family: 'Alfa Slab One', cursive;
+	width: 100%;
+	height: 100%;
+	/*background: #b1e583;*/
+	overflow-x: hidden;
+	overflow-y: hidden;
+	/*background-color: #02b8d8;*/
+	background:#02b8d8 url("../img/pasto.png");
+	background-repeat:repeat-x; 
+	background-position:left bottom;
+	background-size: 40%;
+	/*list-style:none;*/
+
+}
+#header{
+	float: left;
+	z-index: 2000;
+	width: 100%;
+	height: 40%;
+	/*background-color: #02b8d8;*/
+	
+}
+
+
+#header h1{
+	width: 60%;
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.9);
+	float: left;
+	margin-top: 10px;
+	margin-left: 5%;
+	text-align: center;
+
+
+	display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 25px;
+  border: none;
+  font: normal normal normal 50px/1 "Alfa Slab One", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 3px 3px 0 #0199d9 , 4px 4px 0 #0199d9 , 5px 5px 0 #0199d9 , 6px 6px 0 #0199d9 , 7px 7px 0 #0199d9 , 8px 8px 0 #0199d9 , 9px 9px 0 #0199d9 , 10px 10px 0 #0199d9 , 11px 11px 0 #0199d9 , 12px 12px 0 #0199d9 , 13px 13px 0 #0199d9 , 14px 14px 0 #0199d9 , 15px 15px 0 #0199d9 , 16px 16px 0 #0199d9 , 17px 17px 0 #0199d9 , 18px 18px 0 #0199d9 , 19px 19px 0 #0199d9 , 20px 20px 0 #0199d9 ;
+	
+}
+
+#header h2{
+	width: 75%;
+	float: left;
+	text-align: center;
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: normal normal normal 30px/1 "Alfa Slab One", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 1px 1px 0 #0199d9 , 4px 4px 0 #0199d9 , 5px 5px 0 #0199d9 , 6px 6px 0 #0199d9 , 7px 7px 0 #0199d9 , 8px 8px 0 #0199d9 , 9px 9px 0 #0199d9 ;
+	
+}
+
+.cont-slider ul {
+
+
+	list-style:none;
+}
+
+
+
+.casa {
+	float: left;
+	width: 80%;
+	height: 100%;
+	/*background-color: #02b8d8;*/
+	overflow: hidden;
+	z-index: 2;
+
+}
+
+.house-bad {
+	float: left;
+	width: 100%;
+	height: 60%;
+	overflow: hidden;
+	/*background: url("../img/casa-bad.png") no-repeat;*/
+    background-position:left bottom;
+    background-size: 70%;
+    background-repeat: no-repeat;
+	-webkit-animation: test 4s  linear;
+	-webkit-animation-fill-mode: forwards;
+
+
+}
+
+.house-ok {
+	width: 100%;
+	height: 70%;
+	background: url("../img/casa-ok.png") no-repeat;
+    background-position:left bottom;
+    background-size: 52%;
+    position: absolute;
+    bottom: 0;
+    -webkit-animation: test 4.5s  linear;
+    /*-webkit-animation-delay: 2s;*/
+
+    
+	
+
+}
+
+.nube {
+
+	width: 100%;
+	height:60%;
+	background-color: red;
+	background: url("../img/nube.png") no-repeat;
+	z-index:-1;
+	position: absolute;
+
+	-webkit-animation: nubeAnim 250s infinite linear;
+}
+
+
+.nube1 {
+
+	width: 100%;
+	height:60%;
+	/*left: 50%;*/
+	/*background-color: green;*/
+	background: url("../img/nube.png") no-repeat;
+	z-index:-1;
+	position: absolute;
+	left: -100%;
+	-webkit-animation: nubeAnim1 330s infinite linear;
+}
+
+
+@-webkit-keyframes nubeAnim { 
+	0%   { left: -25%; opacity: 0;}
+	1% {  opacity:1;}
+  	/*50% { left: 50%; }*/
+  	100% {left: 100%}
+}
+
+@-webkit-keyframes nubeAnim1 { 
+	0%   { left: -100%; opacity: 1; }
+	50% {left: 0%}
+  	95% {left: 95%; opacity: 1;}
+  	100% { left: 100%; opacity: 0;}
+}
+
+
+@-webkit-keyframes houseAnim { 
+	0%   { opacity: 0; }
+	
+  	100% { opacity: 1;}
+}
+
+@-webkit-keyframes test {
+  0% { background-image: url('../img/casa-bad.png'); background-repeat:no-repeat;}
+  
+  100% { background-image: url('../img/casa-ok.png'); background-repeat:no-repeat;
+  }
+}
+
+
+.boton {
+	position: absolute;
+	display: none;
+	bottom: -10%;
+	right: 5%;
+	display: none;
+	z-index: 9999;
+
+}
+
+.boton button {
+	
+	/*display: none;*/
+	bottom: 0;
+	width: 250px;
+	height: 50px;
+	border: 0;
+	background-color: red;
+	font-size: 30px;
+	font-family: 'Fjalla One', sans-serif;
+	color:#fff;
+
+}
+
+
+.derecha {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 30px;
+	left: 60%;
+	width: 40%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	z-index: 9;
+	
+}
+
+
+.text1 {
+	float: right;
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	background: url("../img/time.png") no-repeat;
+    background-position:left bottom;
+    background-size: 70px;
+}
+
+.text1 h1 {
+	margin-left: 100px;
+	font-size: 30px;
+	vertical-align:text-bottom;
+	position: absolute;
+	bottom: 0;
+}
+
+.text2 {
+	display: block;
+	float: right;
+	width: 100%;
+	height:20%;
+	position: absolute;
+	top: 20%;
+	background: url("../img/precio.png") no-repeat;
+    background-position:left bottom;
+    background-size: 70px;
+}
+
+.text2 h1 {
+	margin-left: 100px;
+	vertical-align:text-bottom;
+	position: absolute;
+	bottom: 0;
+}
+
+
+.text3 {
+	display: block;
+	float: right;
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	top: 40%;
+	background: url("../img/calendar.png") no-repeat;
+    background-position:left bottom;
+    background-size: 70px;
+}
+
+.text3 h1 {
+	margin-left: 100px;
+	vertical-align:text-bottom;
+	position: absolute;
+	bottom: 0;
+}
+
+
+
+.text4 {
+	display: block;
+	float: right;
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	top: 60%;
+	
+}
+
+
+.text4 button {
+
+	width: 250px;
+	height: 50px;
+	border: 0;
+	background-color: cyan;
+	font-size: 30px;
+	font-family: 'Fjalla One', sans-serif;
+	color:#fff;
+	position: absolute;
+	top:25%;
+
+}
+
