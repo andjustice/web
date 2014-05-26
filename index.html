@@ -1,113 +1,213 @@
 
 <html class="no-js" lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js?ver=1.8.1"></script>
-	<script src="js/jquery.velocity.min.js"></script>
+<meta charset="UTF-8" />
+<link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+<!-- <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'> -->
+<!-- <link async href="http://fonts.googleapis.com/css?family=Fredoka%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/> -->
+<link href='http://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js?ver=1.8.1"></script>
+<script src="js/jquery.velocity.min.js"></script>
 
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$("#inicio").click(function(){
-			$(".casa").velocity({
-				"margin-left":"-100%",
-			} , 1400);
-			$(".text1").velocity({
-				"right":"-100%",
-			} , 1200);
-			$(".text2").velocity({
-				"right":"-100%",
-			} , 1400);
-			$(".text3").velocity({
-				"right":"-100%",
-			} , 1600);
-			$(".text4").velocity({
-				"right":"-100%",
-			} , 1800);
-			$(".derecha").velocity({
-				"width":"200%",
-				"left":"0%",
-			} , 1400);
-			$.ajax({url:"./slider/slider.html"}).done(function( data ){
+<script type="text/javascript">
+$(document).ready(function(){
+$("#inicio").click(function(){
+$(".casa").velocity({
+"margin-left":"-60%",
+} , 1400);
+
+});
 
 
-				$(".cont-slider").fadeIn( "slow", function() {
-					$(".cont-slider").css({"display": "block","height":"100%","z-index":"9999"});
-					$(".cont-slider").html(data);
+$("#inicio").click(function(){
+$(".text1").velocity({
+"right":"-100%",
+} , 1000);
 
-					$(".boton").css("display", "block").velocity({
-						"bottom":"5%",	} , 1000);
-				});
+});
 
+$("#inicio").click(function(){
+$(".text2").velocity({
+"right":"-100%",
+} , 1500);
 
-			});
-		});
-
-
-		$( "#close-slider" ).click(function() {
-			$( ".cont-slider" ).fadeOut( "slow", function() {
-				$(".boton").css("display", "none");
-			});
-			$(".boton").velocity({"bottom":"-10%"} , 800);
-			$(".derecha").velocity({
-				"width":"100%",
-				"left":"60%",
-
-			} , 1400);
-			$(".casa").velocity({
-				"margin-left":"0%",
-			} , 1400);
-			$(".text1").velocity({
-				"right":"0%",
-			} , 1200);
-			$(".text2").velocity({
-				"right":"0%",
-			} , 1400);
-			$(".text3").velocity({
-				"right":"0%",
-			} , 1600);
-			$(".text4").velocity({
-				"right":"0%",
-			} , 1800);
-
-		});
+});
 
 
-	})
+$("#inicio").click(function(){
+$(".text3").velocity({
+"right":"-100%",
+} , 2000);
+
+});
+
+$("#inicio").click(function(){
+$(".text4").velocity({
+"right":"-100%",
+} , 2500);
+
+});
+
+$("#inicio").click(function(){
+$(".derecha").velocity({
+"left":"100%",
+} , 2000);
+
+});
+
+
+$("#inicio").click(function(){
+$("#title").velocity({
+"margin-top":"-100%",
+} , 1800);
+
+});
+
+
+// $("#inicio").click(function(){
+// $( "#title" ).fadeOut( 500, function(){
+
+// });
+// });
+
+$("#inicio").on("click",function(){
+	$.ajax({url:"./slider/slider.html"}).done(function( data ){
+		
+		
+		$(".cont-slider").fadeIn( "2000", function() {
+		$(".cont-slider").css({"display": "block","height":"100%","z-index":"9999"});
+		$(".cont-slider").html(data);
+		// $(".boton").fadeIn(2000).css("display", "block");
+		$(".boton").css("display", "block").velocity({
+			"bottom":"5%",	} , 1000);});
+
+		 
+	
+	
+
+ });
+});
+
+
+// $("#inicio").click(function(){
+// $(".cont-slider").fadeIn(2000).css("display", "block");
+
+// });
+
+
+// $( "#close-slider" ).click(function() {
+//   $( "#title" ).fadeIn( "slow", function() {
+//     // $(".boton").css("display", "none");
+//   });
+// });
+
+
+$("#close-slider").click(function(){
+$("#title").velocity({"margin-top":"0%"} , 1100);
+
+});
+
+
+$( "#close-slider" ).click(function() {
+  $( ".cont-slider" ).fadeOut( "slow", function() {
+    $(".boton").css("display", "none");
+  });
+});
+
+
+$("#close-slider").click(function(){
+$(".boton").velocity({"bottom":"-10%"} , 800);
+
+});
+
+
+$("#close-slider").click(function(){
+$(".derecha").velocity({
+"width":"100%",
+"left":"60%",
+
+} , 1500);
+
+});
+
+$("#close-slider").click(function(){
+$(".casa").velocity({
+"margin-left":"0%",
+} , 1400);
+
+});
+
+
+$("#close-slider").click(function(){
+$(".text1").velocity({
+"right":"60%",
+} , 1200);
+
+});
+
+$("#close-slider").click(function(){
+$(".text2").velocity({
+"right":"60%",
+} , 1400);
+
+});
+
+
+$("#close-slider").click(function(){
+$(".text3").velocity({
+"right":"60%",
+} , 1600);
+
+});
+
+$("#close-slider").click(function(){
+$(".text4").velocity({
+"right":"60%",
+} , 1800);
+
+});
+
+
+})
 </script>
 </head>
 
 <body>
-	<!-- <div class="izquierda"> -->
-	<div class="nube"></div>
-	<div class="nube1"></div>
-	<div class="casa">
-		<div id="header">
-			<h1>Hidrolavados Salvador</h1>
-			<h2>Especialista en techos</h2>
+	<div id="header">
+		<div id="title">
+		  <h1>Hidrolavados Salvador</h1>
+		  <h2>Especialista en techos</h2>
+
 		</div>
-		<div class="house-bad"></div>
-		<!-- <div class="house-ok"></div> -->
 
 	</div>
-	<!-- </div> -->
-	<div class="derecha">
+<!-- <div class="izquierda"> -->
+<div class="nube"></div>
+<div class="nube1"></div>
+<div class="casa">
+	
+	<div class="house-bad"></div>
+	<!-- <div class="house-ok"></div> -->
 
-		<div class="text1"><h1>Revaloriza tu propiedad<br>en cuestion de horas</h1></div>
-		<div class="text2"><h1>Precios Accesibles<br>Presupuestos sin cargo</h1></div>
-		<div class="text3"><h1>0223-481-4964<br>0223-154-265230</h1></div>
-		<div class="text4"><button id="inicio"><h1>Ver mis trabajos</h1></button></div>
+</div>
+<!-- </div> -->
+<div class="derecha">
+		<!-- <img src="img/facebook.png" width="10%"> -->
+		<div class="text1"><h1><img src="img/time.png">Revaloriza tu propiedad<br>en cuestion de horas</h1></div>
+		<div class="text2"><h1><img src="img/precio.png">Precios accesibles<br>Presupuestos sin cargo</h1></div>
+		<div class="text3"><h1><img src="img/telefono.png">0223-481-4964<br>0223-154-265230</h1></div>
+		<div id="inicio" class="text4"><h1><img src="img/galery.png">Conoce mis trabajos</h1></div>
+		<!-- <div class="text4"><button id="inicio" ><h1><img src="img/galery.png">Mis Trabajos</h1></button></div> -->
 		
 		
+	
 
-
-	</div>
-	<div class="cont-slider"></div>
-	<div class="boton"><button id="close-slider">cerrar</button></div>
-
+</div>
+<div class="cont-slider"></div>
+<div class="boton"><button id="close-slider">cerrar</button></div>
+			
 
 </body>
 </html>

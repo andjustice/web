@@ -1,79 +1,88 @@
 html{
 	height:100%;
+	min-width: 900px;
 }
 body {
 	font-family: 'Alfa Slab One', cursive;
 	width: 100%;
 	height: 100%;
-	/*background: #b1e583;*/
 	overflow-x: hidden;
 	overflow-y: hidden;
-	/*background-color: #02b8d8;*/
 	background:#02b8d8 url("../img/pasto.png");
 	background-repeat:repeat-x; 
 	background-position:left bottom;
 	background-size: 40%;
-	/*list-style:none;*/
+	
 
 }
 #header{
 	float: left;
-	z-index: 2000;
+	z-index: 9999;
 	width: 100%;
-	height: 40%;
-	/*background-color: #02b8d8;*/
+	height: 20%;
+	display: block;
+	/*background-color:#1a70ff;*/
+	
 	
 }
 
 
 #header h1{
-	width: 60%;
+	z-index: 9999;
+	width: 100%;
 	font-size: 22px;
 	font-weight: 400;
 	text-transform: uppercase;
 	color: rgba(255,255,255,0.9);
 	float: left;
-	margin-top: 10px;
-	margin-left: 5%;
+	margin-top: 2%;
+	/*margin-left: 5%;*/
 	text-align: center;
-
-
 	display: inline-block;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  padding: 25px;
+  /*padding: 25px;*/
   border: none;
-  font: normal normal normal 50px/1 "Alfa Slab One", Helvetica, sans-serif;
+  font: normal 50px/1 "Alfa Slab One", Helvetica, sans-serif;
   color: rgba(255,255,255,1);
   text-align: center;
   -o-text-overflow: clip;
   text-overflow: clip;
-  text-shadow: 3px 3px 0 #0199d9 , 4px 4px 0 #0199d9 , 5px 5px 0 #0199d9 , 6px 6px 0 #0199d9 , 7px 7px 0 #0199d9 , 8px 8px 0 #0199d9 , 9px 9px 0 #0199d9 , 10px 10px 0 #0199d9 , 11px 11px 0 #0199d9 , 12px 12px 0 #0199d9 , 13px 13px 0 #0199d9 , 14px 14px 0 #0199d9 , 15px 15px 0 #0199d9 , 16px 16px 0 #0199d9 , 17px 17px 0 #0199d9 , 18px 18px 0 #0199d9 , 19px 19px 0 #0199d9 , 20px 20px 0 #0199d9 ;
+  text-shadow: 3px 3px 0 #0098D7 , 4px 4px 0 #0098D7 , 5px 5px 0 #0098D7 , 6px 6px 0 #0098D7 , 7px 7px 0 #0098D7 , 8px 8px 0 #0098D7 , 9px 9px 0 #0098D7 , 10px 10px 0 #0098D7 , 11px 11px 0 #0098D7 , 12px 12px 0 #0098D7 , 13px 13px 0 #0098D7 , 14px 14px 0 #0098D7 , 15px 15px 0 #0098D7 , 16px 16px 0 #0098D7 , 17px 17px 0 #0098D7 , 18px 18px 0 #0098D7 , 19px 19px 0 #0098D7 , 20px 20px 0 #0098D7 ;
 	
 }
 
 #header h2{
-	width: 75%;
+	width: 100%;
 	float: left;
 	text-align: center;
-  display: inline-block;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  border: none;
-  font: normal normal normal 30px/1 "Alfa Slab One", Helvetica, sans-serif;
-  color: rgba(255,255,255,1);
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  text-shadow: 1px 1px 0 #0199d9 , 4px 4px 0 #0199d9 , 5px 5px 0 #0199d9 , 6px 6px 0 #0199d9 , 7px 7px 0 #0199d9 , 8px 8px 0 #0199d9 , 9px 9px 0 #0199d9 ;
+  	display: inline-block;
+  	margin-top: 1%;
+  	-webkit-box-sizing: content-box;
+  	-moz-box-sizing: content-box;
+  	box-sizing: content-box;
+  	border: none;
+  	font: normal normal normal 30px/1 "Alfa Slab One", Helvetica, sans-serif;
+  	color: rgba(255,255,255,1);
+  	-o-text-overflow: clip;
+  	text-overflow: clip;
+  	text-shadow: 3px 3px 0 #0098D7 , 4px 4px 0 #0098D7 , 5px 5px 0 #0098D7 , 6px 6px 0 #0098D7 , 7px 7px 0 #0098D7 , 8px 8px 0 #0098D7 , 9px 9px 0 #0098D7 ;
 	
 }
+
+
 
 .cont-slider ul {
 
 
 	list-style:none;
+}
+
+#title {
+	width: 100%;
+	height: 100%;
+	
 }
 
 
@@ -82,16 +91,16 @@ body {
 	float: left;
 	width: 80%;
 	height: 100%;
-	/*background-color: #02b8d8;*/
 	overflow: hidden;
 	z-index: 2;
+	/*background-color: blue;*/
 
 }
 
 .house-bad {
 	float: left;
 	width: 100%;
-	height: 60%;
+	height: 80%;
 	overflow: hidden;
 	/*background: url("../img/casa-bad.png") no-repeat;*/
     background-position:left bottom;
@@ -149,7 +158,6 @@ body {
 @-webkit-keyframes nubeAnim { 
 	0%   { left: -25%; opacity: 0;}
 	1% {  opacity:1;}
-  	/*50% { left: 50%; }*/
   	100% {left: 100%}
 }
 
@@ -201,99 +209,186 @@ body {
 
 
 .derecha {
-	font-family: 'Fjalla One', sans-serif;
 	font-size: 30px;
 	left: 60%;
 	width: 40%;
-	height: 100%;
+	height: 80%;
+	bottom: 0;
 	position: absolute;
 	overflow: hidden;
-	z-index: 9;
+	z-index: 1;
+	/*background-color: blue;*/
 	
 }
 
 
 .text1 {
-	float: right;
 	width: 100%;
 	height: 20%;
 	position: absolute;
-	background: url("../img/time.png") no-repeat;
-    background-position:left bottom;
-    background-size: 70px;
+	right: 0;
+	overflow: hidden;
+	   
 }
 
+
+
 .text1 h1 {
-	margin-left: 100px;
-	font-size: 30px;
-	vertical-align:text-bottom;
+	font-family: 'Passion One', cursive;
+	font-size: 1em;
 	position: absolute;
 	bottom: 0;
+	right: 0%;
+	height: 50%;
+	padding: 20px;
+	padding-left: 125px;
+	color: rgba(255,255,255,1);
+	text-shadow: 1px 1px 0 rgba(140,140,140,0.1) , -1px -1px 1px rgba(0,0,0,0.2) ;
+    border: 1px solid #60A455;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background-color: #73BA5E;
+
+}
+
+.text1 h1 img {
+	min-width: 20%;
+	max-width: 60%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	border-left:solid 0px;
+    border-right:solid #60A455 1px;
+    border-top:solid 0px;
+    border-bottom:solid 0px;
+
 }
 
 .text2 {
-	display: block;
-	float: right;
+	
 	width: 100%;
 	height:20%;
 	position: absolute;
 	top: 20%;
-	background: url("../img/precio.png") no-repeat;
-    background-position:left bottom;
-    background-size: 70px;
+	overflow: hidden;
+	
 }
 
 .text2 h1 {
-	margin-left: 100px;
-	vertical-align:text-bottom;
+	font-family: 'Passion One', cursive;
+	font-size: 30px;
 	position: absolute;
+	height: 50%;
 	bottom: 0;
+	right: 0%;
+	color: rgba(255,255,255,1);
+	padding: 20px;
+	padding-left: 140px;
+	text-shadow: 1px 1px 0 rgba(140,140,140,0.1) , -1px -1px 1px rgba(0,0,0,0.2) ;
+    border: 1px solid #EB7E38;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background-color: #fe9844;
+}
+
+.text2 h1 img {
+
+	position: absolute;
+	min-width: 20%;
+	max-width: 60%;
+	top: 0%;
+	left: 0%;
+	border-left:solid 0px;
+    border-right:solid #EB7E38 1px;
+    border-top:solid 0px;
+    border-bottom:solid 0px;
+
 }
 
 
 .text3 {
-	display: block;
-	float: right;
+	
 	width: 100%;
 	height: 20%;
 	position: absolute;
 	top: 40%;
-	background: url("../img/calendar.png") no-repeat;
-    background-position:left bottom;
-    background-size: 70px;
+	overflow: hidden;
+	
 }
 
 .text3 h1 {
-	margin-left: 100px;
-	vertical-align:text-bottom;
+	font-family: 'Passion One', cursive;
+	font-size: 34px;
+	height: 50%;
 	position: absolute;
-	bottom: 0;
+	right: 0%;
+	bottom: 0%;
+	color: rgba(255,255,255,1);
+	padding: 20px;
+	padding-left: 170px;
+	text-shadow: 1px 1px 0 rgba(140,140,140,0.1) , -1px -1px 1px rgba(0,0,0,0.2) ;
+    border: 1px solid #D63B3C;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background-color: #e44041;
 }
+
+.text3 h1 img {
+	position: absolute;
+	min-width: 20%;
+	max-width: 60%;
+	top: 0%;
+	left: 0%;
+	border-left:solid 0px;
+    border-right:solid #D63B3C 1px;
+    border-top:solid 0px;
+    border-bottom:solid 0px;
+
+}
+
 
 
 
 .text4 {
-	display: block;
-	float: right;
+	
 	width: 100%;
 	height: 20%;
 	position: absolute;
 	top: 60%;
+	overflow: hidden;
+	cursor: pointer;
 	
 }
 
-
-.text4 button {
-
-	width: 250px;
-	height: 50px;
-	border: 0;
-	background-color: cyan;
-	font-size: 30px;
-	font-family: 'Fjalla One', sans-serif;
-	color:#fff;
+.text4 h1 {
+	font-family: 'Passion One', cursive;
+	font-size: 34px;
+	height: 50%;
 	position: absolute;
-	top:25%;
+	right: 0%;
+	bottom: 0%;
+	color: rgba(255,255,255,1);
+	padding: 20px;
+	padding-left: 140px;
+	text-shadow: 1px 1px 0 rgba(140,140,140,0.1) , -1px -1px 1px rgba(0,0,0,0.2) ;
+    border: 1px solid #3C7DDB;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background-color: #488dff;
+}
+
+.text4 h1 img {
+	position: absolute;
+	min-width: 20%;
+	max-width: 60%;
+	top: 0%;
+	left: 0%;
+	border-left:solid 0px;
+    border-right:solid #3C7DDB 1px;
+    border-top:solid 0px;
+    border-bottom:solid 0px;
 
 }
+
+
 
