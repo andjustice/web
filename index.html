@@ -1,185 +1,113 @@
 
 <html class="no-js" lang="en">
 <head>
-<meta charset="UTF-8" />
-<link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/demo.css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js?ver=1.8.1"></script>
-<script src="js/jquery.velocity.min.js"></script>
+	<meta charset="UTF-8" />
+	<link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js?ver=1.8.1"></script>
+	<script src="js/jquery.velocity.min.js"></script>
 
-<script type="text/javascript">
-$(document).ready(function(){
-$("#inicio").click(function(){
-$(".casa").velocity({
-"margin-left":"-100%",
-} , 1400);
-
-});
-
-
-$("#inicio").click(function(){
-$(".text1").velocity({
-"right":"-100%",
-} , 1200);
-
-});
-
-$("#inicio").click(function(){
-$(".text2").velocity({
-"right":"-100%",
-} , 1400);
-
-});
-
-
-$("#inicio").click(function(){
-$(".text3").velocity({
-"right":"-100%",
-} , 1600);
-
-});
-
-$("#inicio").click(function(){
-$(".text4").velocity({
-"right":"-100%",
-} , 1800);
-
-});
-
-$("#inicio").click(function(){
-$(".derecha").velocity({
-"width":"200%",
-"left":"0%",
-} , 1400);
-
-});
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#inicio").click(function(){
+			$(".casa").velocity({
+				"margin-left":"-100%",
+			} , 1400);
+			$(".text1").velocity({
+				"right":"-100%",
+			} , 1200);
+			$(".text2").velocity({
+				"right":"-100%",
+			} , 1400);
+			$(".text3").velocity({
+				"right":"-100%",
+			} , 1600);
+			$(".text4").velocity({
+				"right":"-100%",
+			} , 1800);
+			$(".derecha").velocity({
+				"width":"200%",
+				"left":"0%",
+			} , 1400);
+			$.ajax({url:"./slider/slider.html"}).done(function( data ){
 
 
+				$(".cont-slider").fadeIn( "slow", function() {
+					$(".cont-slider").css({"display": "block","height":"100%","z-index":"9999"});
+					$(".cont-slider").html(data);
+
+					$(".boton").css("display", "block").velocity({
+						"bottom":"5%",	} , 1000);
+				});
 
 
-$("#inicio").on("click",function(){
-	$.ajax({url:"./slider/slider.html"}).done(function( data ){
-		
-		
-		$(".cont-slider").fadeIn( "slow", function() {
-		$(".cont-slider").css({"display": "block","height":"100%","z-index":"9999"});
-		$(".cont-slider").html(data);
-		// $(".boton").fadeIn(2000).css("display", "block");
-		$(".boton").css("display", "block").velocity({
-			"bottom":"5%",	} , 1000);
-
-		 
-	});
-	
-
- });
-});
+			});
+		});
 
 
-// $("#inicio").click(function(){
-// $(".cont-slider").fadeIn(2000).css("display", "block");
+		$( "#close-slider" ).click(function() {
+			$( ".cont-slider" ).fadeOut( "slow", function() {
+				$(".boton").css("display", "none");
+			});
+			$(".boton").velocity({"bottom":"-10%"} , 800);
+			$(".derecha").velocity({
+				"width":"100%",
+				"left":"60%",
 
-// });
+			} , 1400);
+			$(".casa").velocity({
+				"margin-left":"0%",
+			} , 1400);
+			$(".text1").velocity({
+				"right":"0%",
+			} , 1200);
+			$(".text2").velocity({
+				"right":"0%",
+			} , 1400);
+			$(".text3").velocity({
+				"right":"0%",
+			} , 1600);
+			$(".text4").velocity({
+				"right":"0%",
+			} , 1800);
 
-
-
-
-
-
-$( "#close-slider" ).click(function() {
-  $( ".cont-slider" ).fadeOut( "slow", function() {
-    $(".boton").css("display", "none");
-  });
-});
-
-
-$("#close-slider").click(function(){
-$(".boton").velocity({"bottom":"-10%"} , 800);
-
-});
-
-
-$("#close-slider").click(function(){
-$(".derecha").velocity({
-"width":"100%",
-"left":"60%",
-
-} , 1400);
-
-});
-
-$("#close-slider").click(function(){
-$(".casa").velocity({
-"margin-left":"0%",
-} , 1400);
-
-});
+		});
 
 
-$("#close-slider").click(function(){
-$(".text1").velocity({
-"right":"0%",
-} , 1200);
-
-});
-
-$("#close-slider").click(function(){
-$(".text2").velocity({
-"right":"0%",
-} , 1400);
-
-});
-
-
-$("#close-slider").click(function(){
-$(".text3").velocity({
-"right":"0%",
-} , 1600);
-
-});
-
-$("#close-slider").click(function(){
-$(".text4").velocity({
-"right":"0%",
-} , 1800);
-
-});
-
-
-})
+	})
 </script>
 </head>
 
 <body>
-<!-- <div class="izquierda"> -->
-<div class="nube"></div>
-<div class="nube1"></div>
-<div class="casa">
-	<div id="header">
-		<h1>Hidrolavados Salvador</h1>
-		<h2>Especialista en techos</h2>
-	</div>
-	<div class="house-bad"></div>
-	<!-- <div class="house-ok"></div> -->
+	<!-- <div class="izquierda"> -->
+	<div class="nube"></div>
+	<div class="nube1"></div>
+	<div class="casa">
+		<div id="header">
+			<h1>Hidrolavados Salvador</h1>
+			<h2>Especialista en techos</h2>
+		</div>
+		<div class="house-bad"></div>
+		<!-- <div class="house-ok"></div> -->
 
-</div>
-<!-- </div> -->
-<div class="derecha">
-	
+	</div>
+	<!-- </div> -->
+	<div class="derecha">
+
 		<div class="text1"><h1>Revaloriza tu propiedad<br>en cuestion de horas</h1></div>
 		<div class="text2"><h1>Precios Accesibles<br>Presupuestos sin cargo</h1></div>
 		<div class="text3"><h1>0223-481-4964<br>0223-154-265230</h1></div>
 		<div class="text4"><button id="inicio"><h1>Ver mis trabajos</h1></button></div>
 		
 		
-	
 
-</div>
-<div class="cont-slider"></div>
-<div class="boton"><button id="close-slider">cerrar</button></div>
-			
+
+	</div>
+	<div class="cont-slider"></div>
+	<div class="boton"><button id="close-slider">cerrar</button></div>
+
 
 </body>
 </html>
