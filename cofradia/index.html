@@ -1,118 +1,110 @@
-
-<html class="no-js" lang="en">
-<head>
-<meta charset="UTF-8" />
-<link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
-<!-- <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'> -->
-<!-- <link async href="http://fonts.googleapis.com/css?family=Fredoka%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/> -->
-<link href='http://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/demo.css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js?ver=1.8.1"></script>
-<script src="js/jquery.velocity.min.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function(){
-	$("#inicio").click(function(){
-		$(".casa").velocity({
-			"margin-left":"-60%",
-		} , 1400);
-		$(".text1").velocity({
-			"right":"-100%",
-		} , 1000);
-		$(".text2").velocity({
-			"right":"-100%",
-		} , 1500);
-		$(".text3").velocity({
-			"right":"-100%",
-		} , 2000);
-		$(".text4").velocity({
-			"right":"-100%",
-		} , 2500);
-		$(".derecha").velocity({
-			"left":"100%",
-		} , 2000);
-		$("#title").velocity({
-			"margin-top":"-100%",
-		} , 1800);
-
-	});
-
-	$("#inicio").on("click",function(){
-		$.ajax({url:"./slider/slider.html"}).done(function( data ){
-			$(".cont-slider").fadeIn( "2000", function() {
-				$(".cont-slider").css({"display": "block","height":"100%","z-index":"9999"});
-				$(".cont-slider").html(data);
-				$(".boton").css("display", "block").velocity({
-					"bottom":"5%",	} , 1000);});
-		});
-	});
-
-
-	$("#close-slider").click(function(){
-		$("#title").velocity({"margin-top":"0%"} , 1100);
-		$( ".cont-slider" ).fadeOut( "slow", function() {
-			$(".boton").css("display", "none");
-		});
-		$(".boton").velocity({"bottom":"-10%"} , 800);
-		$(".derecha").velocity({
-			"width":"100%",
-			"left":"60%",
-		} , 1500);
-		$(".casa").velocity({
-			"margin-left":"0%",
-		} , 1400);
-		$(".text1").velocity({
-			"right":"60%",
-		} , 1200);
-		$(".text2").velocity({
-			"right":"60%",
-		} , 1400);
-		$(".text3").velocity({
-			"right":"60%",
-		} , 1600);
-		$(".text4").velocity({
-			"right":"60%",
-		} , 1800);
-	});
-})
-</script>
-</head>
-
-<body>
-	<div id="header">
-		<div id="title">
-		  <h1>Hidrolavados Salvador</h1>
-		  <h2>Especialista en techos</h2>
-
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>COFRADIA 2</title>
+		<meta name="description" content="Blueprint: Responsive Content Slider" />
+		<meta name="keywords" content="responsive, content, slider, jquery, css3, fluid, template" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<header >
+			<img src="img/logo.png">
+		</header>	
+		<div class="container">
+			<div class="main">
+				<div id="cbp-contentslider" class="cbp-contentslider">
+					<ul>
+						<li id="slide1">
+							<img src="img/about-img.png" class="bkg" alt="background">
+							<!-- <h3>NOSOTRAS</h3> -->
+							
+							<div>
+							 
+							 
+							 <!-- <img src="img/mara.png"> -->
+								
+								<div class="cbp-content">
+									<div class="designer"><img src="img/designers.png"></div>
+									<p>Somos una agencia Creativa "Freelance" de comunicación visual y diseño Gráfico. Conformado por dos jóvenes profesionales recibidas de la Escuela de Artes Visuales Martin A. Malharro, de la cuidad de Mar del Plata. </p>
+									<p>Nos dedicamos a brindar soluciones integrales en el ámbito del diseño, marketing y publicidad. Orientada tanto a la publicidad como a la actividad editorial de empresas, profesionales, particulares y comercios que ven la necesidad de abrir o mejorar sus canales de comunicación con sus clientes.</p><p>Generamos trabajos de alto impacto visual con diseños basados en conceptos y mensajes acordes al segmento de mercado al que se desea llegar y los objetivos que usted se haya trazado. </p>
+								</div>
+							</div>
+						</li>
+						<li id="slide2">
+							<img src="img/design-img.png" class="bkg">
+							<!-- <h3>ARTE</h3> -->
+							<div class="full-tabs">
+								<object frameborder="0" data="sections/art/index.html" type="text/html"></object>
+								
+							</div>
+						</li>
+						<li id="slide3">
+							<img src="img/art-img.png" class="bkg">
+							<div class="full-tabs">
+								<object width="100%" height="100%" frameborder="0" scrolling="no" data="sections/design/index.html" type="text/html"></object>
+							</div>
+						</li>
+						<li id="slide4">
+							<img src="img/contact-img.png" class="bkg">
+							<h3>CONTACTO</h3>
+							<div>
+								<div class="cbp-content">
+									<p>Yarrow bush tomato beetroot taro water chestnut komatsuna azuki bean. Parsnip artichoke water chestnut caulie carrot grape summer purslane brussels sprout fava bean tomatillo pea groundnut nori earthnut pea tigernut. Tigernut brussels sprout wakame tomatillo radicchio carrot maize swiss chard seakale melon grape broccoli pea sprouts kakadu plum plantain cauliflower. Gram salsify radicchio daikon courgette rock melon bunya nuts turnip greens. Cabbage black-eyed pea spinach asparagus plantain cress soybean spring onion salad artichoke pea garlic silver beet grape water spinach zucchini wakame summer purslane.</p>
+								</div>
+							</div>
+						</li>
+						<!-- <li id="slide5">
+							<h3 class="icon-platypus">Platypus</h3>
+							<div>
+								<div class="cbp-content">
+									<p>Potato watercress burdock spinach quandong jícama chard pea sprouts garlic celery turnip daikon kale lotus root sorrel coriander rock melon cabbage. Epazote salsify lentil rock melon eggplant cauliflower zucchini caulie catsear broccoli rabe pumpkin lettuce okra green bean squash seakale onion water chestnut. Sweet pepper peanut corn soko celery winter purslane.</p>
+									<p>Daikon artichoke gumbo azuki bean bok choy avocado winter purslane gram earthnut pea broccoli salsify squash plantain wattle seed wakame broccoli rabe bamboo shoot. Zucchini lotus root azuki bean epazote dulse pumpkin rutabaga spinach. Endive mung bean gumbo maize plantain rock melon.</p>
+								</div>
+							</div>
+						</li> -->
+					</ul>
+					<nav>
+						<a href="#slide1"><img src="img/icon-menu-about.png" class="icon-menu"><span>NOSOTRAS</span></a>
+						<a href="#slide2"><img src="img/icon-menu-art.png" class="icon-menu"><span>ARTE</span></a>
+						<a href="#slide3"><img src="img/icon-menu-design.png" class="icon-menu"><span>DISE&Ntilde;O</span></a>
+						<a href="#slide4"><img src="img/icon-menu-contact.png" class="icon-menu"><span>CONTACTO</span></a>
+						<!-- <a href="#slide5" class="icon-platypus"><span>Platypus</span></a> -->
+					</nav>
+				</div>
+			</div>
 		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!-- // <script src="js/sections.js"></script> -->
+		<script src="js/jquery.cbpContentSlider.min.js"></script>
+		<script>
+			$(function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpContentSlider( [options] );
+				- options:
+				{
+					// default transition speed (ms)
+					speed : 500,
+					// default transition easing
+					easing : 'ease-in-out',
+					// current item's index
+					current : 0
+				}
+				- destroy:
+				$( selector ).cbpContentSlider( 'destroy' );
+				*/
 
-	</div>
-<!-- <div class="izquierda"> -->
-<div class="nube"></div>
-<div class="nube1"></div>
-<div class="casa">
-	
-	<div class="house-bad"></div>
-	<!-- <div class="house-ok"></div> -->
+				$( '#cbp-contentslider' ).cbpContentSlider();
+			});
+		</script>
 
-</div>
-<!-- </div> -->
-<div class="derecha">
-		<!-- <img src="img/facebook.png" width="10%"> -->
-		<div class="text1"><h1><img src="img/time.png">Revaloriza tu propiedad<br>en cuestion de horas</h1></div>
-		<div class="text2"><h1><img src="img/precio.png">Precios accesibles<br>Presupuestos sin cargo</h1></div>
-		<div class="text3"><h1><img src="img/telefono.png">0223-481-4964<br>0223-154-265230</h1></div>
-		<div id="inicio" class="text4"><h1><img src="img/galery.png">Conoce mis trabajos</h1></div>
-		<!-- <div class="text4"><button id="inicio" ><h1><img src="img/galery.png">Mis Trabajos</h1></button></div> -->
-		
-		
-	
 
-</div>
-<div class="cont-slider"></div>
-<div class="boton"><button id="close-slider">cerrar</button></div>
-			
-
-</body>
+	</body>
 </html>
