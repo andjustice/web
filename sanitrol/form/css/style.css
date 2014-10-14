@@ -1,0 +1,161 @@
+body {
+	
+	width:285px;
+	height:155px;  
+	padding:0;
+	margin:0;
+	border:0; 
+	background:url(../img/trans.png) repeat top left;  
+}
+
+table {
+	
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#contenedor {
+	width: 280px;
+	background:url(../img/form-back.png) no-repeat top left;  
+	height:150px;
+	padding:0;
+	margin:0;
+	border:0; 
+	 
+	
+}
+
+/*Estilos formulario*/
+#textoContacto {
+	width: 280px;
+	height:150px;
+	position:relative;
+	background-color:yellow; 
+	
+}
+
+
+#formulario {
+  
+    background:url(../img/trans.png) no-repeat top left;  
+    font-family: Helvetica, Verdana, Geneva, sans-serif;
+    font-size: 13px;
+    width:250px; 
+    height:70px;
+    margin: 0 auto;
+    padding-top:20px; 
+    
+    
+    
+   
+}
+#formulario label{
+	display: block;
+	float:left;
+	width:80px;
+    font-weight:bold;
+    font-size:13px;
+    
+    padding-top:5px;
+    
+    position: relative;
+}
+
+label.error { 
+	width:175px;
+	margin-top:-17px;
+	
+	color:#ff0000;
+	
+	float: left;
+	
+	font-size:1em;
+}
+
+#formulario input{
+	display: block;
+	float:left;
+	width:250px;
+	margin-bottom: 7px;
+}
+
+#formulario textarea{
+	display: block;
+	float:left;
+	width:254px;
+	height: 200px;
+	margin-bottom: 5px;
+	
+	resize: none;
+}
+
+#formulario .botonAcceder{
+	width: 130px;
+	height: 30px;
+	background-color: #4d79d2;
+	color:#FFFFFF;
+	margin-left:60px;
+	margin-top:10px;
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	border: 0px solid #000000;
+	
+}
+
+#formulario .botonAcceder:hover{
+	background: #1C5FE6;
+	color:#FFFFFF;
+}
+
+#formulario #aster {
+	color:#ff0000;
+}
+
+#textoContacto {
+	color:#535353;
+}
+
+.thanks{
+	/*position:absolute;*/
+	background:url(../img/thanks.png) no-repeat top left;
+	/*background-color:#FFFF00;*/
+	/*color:#224473;*/
+	text-align:center;
+	height:148px;
+	width:279px;
+	/*
+	margin-top:200px;
+	margin-left:30px;*/
+	/*font-size:13px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
